@@ -1,0 +1,5 @@
+spring:
+  rabbitmq:
+    virtual-host: /hmall
+    username: hmall
+    password: 123456
