@@ -22,4 +22,5 @@ docker run -e RABBITMQ_DEFAULT_USER=itheima  \
 
 ## 交换机类型
 
-![Uploading image.png…]()
+![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/be028621-76e6-44db-95ad-dd40cc32d4eb)
+
