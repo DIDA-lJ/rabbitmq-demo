@@ -31,4 +31,5 @@ docker run -e RABBITMQ_DEFAULT_USER=itheima  \
 ![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/bde345b5-25ed-4d6a-a76b-14c7ad9811d5)
 
 ### Direct 交换机
-![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/250f3d18-62a7-4cf2-a74e-0779b899afb4)
+![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/66e432c9-5f86-4c57-8880-f8afb3b9d90d)
+
