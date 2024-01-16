@@ -29,3 +29,5 @@ docker run -e RABBITMQ_DEFAULT_USER=itheima  \
 
 ### Fanout 交换机（广播）
 ![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/bde345b5-25ed-4d6a-a76b-14c7ad9811d5)
+
+### Direct 交换机
