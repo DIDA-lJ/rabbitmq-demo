@@ -1,7 +1,12 @@
 # RabbitMQ-Demo
 
-## rabbitmq 安装
+
+
+
+## 项目介绍
 本项目主要是 rabbitmq 入门案例，从零到一使用 rabbitmq
+
+## docker 安装 RabbitMQ
 ```docker 
 docker run -e RABBITMQ_DEFAULT_USER=itheima  \
            -e RABBITMQ_DEFAULT_PASS=123456 \
