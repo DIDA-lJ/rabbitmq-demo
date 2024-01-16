@@ -5,3 +5,6 @@ spring:
     virtual-host: /hmall # 虚拟主机
     username: hmall # rabbitmq 用户
     password: 123456 # rabbitmq 密码
+    listener:
+      simple:
+        prefetch: 1
