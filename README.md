@@ -20,8 +20,11 @@ docker run -e RABBITMQ_DEFAULT_USER=itheima  \
 ### work 模型
 ![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/37e098a3-da6d-4235-8cf8-c39e6dd76c88)
 
-## 交换机类型
+## 交换机概述
+### 交换机作用
+![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/51c82504-8a2c-48aa-8a66-fb76fe80f5c0)
 
+### 交换机类型
 ![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/be028621-76e6-44db-95ad-dd40cc32d4eb)
 
 ### Fanout 交换机（广播）
