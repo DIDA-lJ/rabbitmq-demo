@@ -19,6 +19,7 @@ public class SpringRabbitListener {
         log.info("接收到消息：{}",msg);
         log.info("消息处理完成!");
     }
+
     @RabbitListener(queues = "work.queue")
     public  void listenWorkerQueueMessage1(String msg) throws InterruptedException {
         log.info("work.queue 1 接收到消息：{}",msg);
@@ -31,5 +32,15 @@ public class SpringRabbitListener {
         log.error("work.queue 2 接收到消息：{}",msg);
         Thread.sleep(200);
         log.error("work.queue 2 消息处理完成!");
+    }
+
+    @RabbitListener(queues = "fanout.queue1")
+    public  void listenFanoutQueueMessage1(String msg) throws InterruptedException {
+        log.info("消费者1:【fanout.queue 1 收到消息：{}】",msg);
+    }
+
+    @RabbitListener(queues = "fanout.queue2")
+    public  void listenFanoutQueueMessage2(String msg) throws InterruptedException {
+        log.error("消费者2:【fanout.queue 2 收到消息：{}】",msg);
     }
 }
