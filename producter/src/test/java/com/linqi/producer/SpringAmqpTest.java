@@ -33,4 +33,11 @@ public class SpringAmqpTest {
         }
 
     }
+
+    @Test
+    void testSendFanout(){
+        String exchangeName = "hmall.fanout";
+        String message = "hello, spring amqp 【fanout.queue】";
+        rabbitTemplate.convertAndSend(exchangeName,null,message);
+    }
 }
