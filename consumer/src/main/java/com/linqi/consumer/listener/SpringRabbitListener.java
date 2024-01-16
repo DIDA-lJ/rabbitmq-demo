@@ -20,15 +20,16 @@ public class SpringRabbitListener {
         log.info("消息处理完成!");
     }
     @RabbitListener(queues = "work.queue")
-    public  void listenWorkerQueueMessage1(String msg){
-        log.info("work.queue 1接收到消息：{}",msg);
+    public  void listenWorkerQueueMessage1(String msg) throws InterruptedException {
+        log.info("work.queue 1 接收到消息：{}",msg);
+        Thread.sleep(3000);
         log.info("work.queue 1消息处理完成!");
     }
 
     @RabbitListener(queues = "work.queue")
     public  void listenWorkerQueueMessage2(String msg) throws InterruptedException {
-        log.info("work.queue 2 接收到消息：{}",msg);
-        Thread.sleep(5000);
-        log.info("work.queue 2 消息处理完成!");
+        log.error("work.queue 2 接收到消息：{}",msg);
+        Thread.sleep(1000);
+        log.error("work.queue 2 消息处理完成!");
     }
 }
