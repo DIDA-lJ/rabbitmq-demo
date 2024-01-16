@@ -19,3 +19,6 @@ docker run -e RABBITMQ_DEFAULT_USER=itheima  \
 ## 消息队列模型
 ### work 模型
 ![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/37e098a3-da6d-4235-8cf8-c39e6dd76c88)
+
+## 交换机类型
+
