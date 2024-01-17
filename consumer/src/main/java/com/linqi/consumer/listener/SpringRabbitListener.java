@@ -53,4 +53,14 @@ public class SpringRabbitListener {
     public  void listenDirectQueueMessage2(String msg) throws InterruptedException {
         log.error("消费者2:【direct.queue 2 收到消息：{}】",msg);
     }
+
+    @RabbitListener(queues = "topic.queue1")
+    public  void listenTopicQueueMessage1(String msg) throws InterruptedException {
+        log.info("消费者1:【topic.queue 1 收到消息：{}】",msg);
+    }
+
+    @RabbitListener(queues = "topic.queue2")
+    public  void listenTopicQueueMessage2(String msg) throws InterruptedException {
+        log.error("消费者2:【topic.queue 2 收到消息：{}】",msg);
+    }
 }
