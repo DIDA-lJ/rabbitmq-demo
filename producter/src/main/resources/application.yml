@@ -1,3 +1,8 @@
+logging:
+  pattern:
+    dateformat:  yyyy-MM-dd HH:mm:ss.SSS
+  level:
+    com.linqi.producer: debug
 spring:
   rabbitmq:
     host: 192.168.88.101 # rabbitmq 远程主机
