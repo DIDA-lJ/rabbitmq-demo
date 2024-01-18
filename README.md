@@ -36,4 +36,9 @@ docker run -e RABBITMQ_DEFAULT_USER=itheima  \
 ### Topic 交换机
 ![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/e8179c11-a8d5-4214-9fde-e11cf8081097)
 
+## 声明队列和交换机
+### 方式一
+![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/80f35784-9133-472e-9cc4-f90d97068f30)
+
+
 
