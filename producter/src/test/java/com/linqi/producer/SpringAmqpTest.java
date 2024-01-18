@@ -5,6 +5,8 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author linqi
@@ -53,5 +55,14 @@ public class SpringAmqpTest {
         String exchangeName = "hmall.topic";
         String message = "hello, spring amqp 【topic.queue】";
         rabbitTemplate.convertAndSend(exchangeName,"china.news",message);
+    }
+
+    @Test
+    void testSendQueue(){
+        String exchangeName = "object.queue";
+        Map<String,Object> message = new HashMap<String,Object>(2);
+        message.put("name","jack");
+        message.put("age",21);
+        rabbitTemplate.convertAndSend(exchangeName,message);
     }
 }
