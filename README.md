@@ -56,4 +56,5 @@ docker run -e RABBITMQ_DEFAULT_USER=itheima  \
 
 ![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/ecd4f7b3-1535-4370-826b-6bd242191da3)
 ![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/67f95223-4a73-4b3b-af46-9b4801240a86)
+![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/67617d19-ca67-465a-ad51-cae7e43184f7)
 
