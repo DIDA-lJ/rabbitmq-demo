@@ -43,4 +43,7 @@ docker run -e RABBITMQ_DEFAULT_USER=itheima  \
 ### 方式二
 ![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/52550ee7-b570-4b05-8363-788da2e90297)
 
+## 消息转换器
+默认的序列化方式不安全，所以需要重新配置消息转换器
+![image](https://github.com/DIDA-lJ/rabbitmq-demo/assets/97254796/b5e810d1-398e-4dfd-a523-7c7507b09ae3)
 
