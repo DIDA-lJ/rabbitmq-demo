@@ -12,3 +12,5 @@ spring:
         initial-interval: 1000ms # 失败后的初始等待时间
         multiplier: 1 # 失败后下次的等待时间倍数
         max-attempts: 3 # 最大重试次数
+    publisher-confirm-type: correlated
+    publisher-returns: true
