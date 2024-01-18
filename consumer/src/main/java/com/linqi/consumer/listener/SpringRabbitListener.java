@@ -74,4 +74,9 @@ public class SpringRabbitListener {
     public  void listenTopicQueueMessage2(String msg) throws InterruptedException {
         log.error("消费者2:【topic.queue 2 收到消息：{}】",msg);
     }
+
+    @RabbitListener(queues = "object.queue")
+    public  void listenObjectQueueMessage(String msg) throws InterruptedException {
+        log.error("消费者2:【topic.queue 2 收到消息：{}】",msg);
+    }
 }
