@@ -5,3 +5,10 @@ spring:
     virtual-host: /hmall # 虚拟主机
     username: hmall # rabbitmq 用户
     password: 123456 # rabbitmq 密码
+    connection-timeout: 1s #设置 MQ 消息重连时间
+    template:
+      retry:
+        enabled: true # 开启超时重试的机制
+        initial-interval: 1000ms # 失败后的初始等待时间
+        multiplier: 1 # 失败后下次的等待时间倍数
+        max-attempts: 3 # 最大重试次数
